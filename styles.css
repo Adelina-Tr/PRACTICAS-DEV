@@ -1,6 +1,6 @@
 header{
     display: flex;
-    background-color: #f4f4f4;
+    background-color:#EDE8EF;
 }
 nav a{
     text-decoration: none;
@@ -21,5 +21,12 @@ nav ul{
 }
 .subtitle, 
 h3{
-    color:#636262dd;
+    color:#705697;
 }
+.box{
+    background-color: #EDEDF5;
+}
+#soft-skills ul li::marker {
+    color: #705697;
+  }
+
