@@ -1,15 +1,25 @@
 header{
     display: flex;
+    background-color: #f4f4f4;
 }
-
+nav a{
+    text-decoration: none;
+    color: #2a8ec7;
+}
 nav ul{
     list-style: none;
     display: flex;
     gap: 50px;
 }
-
 .box-flex{    
     list-style: none;
     display: flex;
     gap: 50px;
+}
+.title{
+    color: #2a8ec7;
+}
+.subtitle, 
+h3{
+    color:#636262dd;
 }
