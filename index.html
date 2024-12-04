@@ -12,7 +12,7 @@
 <body>
     <header>
         <img src=".\img\logo.png"  width="10%" alt="logo">
-        <nav> 
+        <nav id="menu"> 
             <ul>
                 <li><a href="#about-me">ABOUT ME</a></li>
                 <li><a href="#hard-skills">HARD SKILLS</a></li>
@@ -23,18 +23,20 @@
         </nav>
     </header>
     <section id="about-me">
-        <h1 class="subtitle">Adelina Trejo Espinoza</h1>
-        <h2 class="subtitle">Junior Developer</h2>
+        <div class="heading-me">
+            <h1 class="heading-name">ADELINA TREJO ESPINOZA</h1>
+            <h2 class="heading-role">Junior Developer</h2>
+        </div>
         <img src=".\img\foto.png" width="15%" alt="foto">
         <h2 class="title">ABOUT ME</h2>
-        <p>Entusiasta de la tecnología y el aprendizaje continuo, 
+        <p class="general-text">Entusiasta de la tecnología y el aprendizaje continuo, 
             mi objetivo es participar en el área de programación 
             donde pueda enfrentar desafíos reales que me permitan aplicar mis conocimientos 
-            teóricos y técnicos en un entorno colaborativo.
+            teóricos y técnicos en un entorno colaborativo.<br>
             Mi enfoque está orientado a desarrollar soluciones eficientes, funcionales, e innovadoras, 
             con un compromiso constante por mejorar y aprender.
         </p>
-        <div class="btn-home">
+        <div>
             <a href="https://www.linkedin.com/in/adelina-trejo/" class="btn">LinkedIn</a>
             <a href="https://drive.google.com/file/d/1bzSNT59Wy97MIUcPSvWSmxA7ygNC9DC3/view?usp=sharing" class="btn">CV</a>
             <a href="https://github.com/Adelina-Tr" class="btn">GitHub</a>
@@ -42,7 +44,7 @@
     </section>
     <section class="content-hs" id="hard-skills">
         <h2 class="title">HARD SKILLS</h2>
-        <p>Soy estudiante de Ingeniería en Tecnologías Computacionales y 
+        <p class="general-text">Soy estudiante de Ingeniería en Tecnologías Computacionales y 
             complemento mi formación académica con un enfoque autodidacta en Desarrollo Web, 
             integrando un aprendizaje práctico y orientado a resultados.  
         </p>
@@ -51,47 +53,47 @@
                 <img class="icon" src=".\img\html.png">
                 <img class="icon" src=".\img\css.png">
                 <h3>Frontend</h3>
-                <p>Diseño y desarrollo de interfaces de usuario con HTML y CSS.</p>
+                <p class="hard-skills-text">Diseño y desarrollo de interfaces de usuario con HTML y CSS.</p>
             </div>  
             <div class="box">
                 <img class="icon" src=".\img\git.png">
                 <img class="icon" src=".\img\github.png">
-                <h3>Version Control System</h3>
-                <p>Gestión de versiones y control de cambios en el código con Git y GitHub.</p>
+                <h3>VCS</h3>
+                <p class="hard-skills-text">Gestión de versiones y control de cambios en el código con Git y GitHub.</p>
             </div>   
             <div class="box">
                 <img class="icon" src=".\img\java.png">
                 <img class="icon" width="2%" src=".\img\sql.png">
                 <h3>Backend</h3>
-                <p>POO y Estructuras de Datos con Java, y gestión de bases de datos con SQL.</p>
+                <p class="hard-skills-text">POO y Estructuras de Datos con Java, y gestión de bases de datos con SQL.</p>
             </div>        
             <div class="box">
                 <img class="icon" width="3%" src=".\img\vsc.png">
                 <img class="icon" width="3%" src=".\img\codeium.png">
-                <h3>Integrated Development Environment</h3>
-                <p>Desarrollo y edición de código en Visual Studio Code con asistencia de Codeium.</p>
+                <h3>IDE</h3>
+                <p class="hard-skills-text">Desarrollo y edición de código en Visual Studio Code con asistencia de Codeium.</p>
             </div>  
         </div>
     </section>
     <section class="content-sk" id="soft-skills">
         <h2 class="title">SOFT SKILLS</h2>
-        <p>Como estudiante virtual, he logrado avanzar en mis objetivos académicos y 
-            personales, aprovechando cada oportunidad para crecer y mejorar. 
+        <p class="general-text">Como estudiante virtual, he logrado avanzar en mis objetivos académicos y 
+            personales, aprovechando cada oportunidad para crecer y mejorar.<br> 
             Mi trayectoria refleja resultados concretos, autoliderazgo, 
             adaptabilidad y determinación para enfrentar retos.
         </p>
-        <div class="box-flex">
-            <ul>
+        <div class="box-flex" id="skills" >
+            <ul class="general-text">
                 <li>Proactividad</li>
                 <li>Aprendizaje Activo</li>
                 <li>Adaptabilidad</li>
             </ul>
-            <ul>  
+            <ul class="general-text">  
                 <li>Liderazgo</li>
                 <li>Trabajo en Equipo</li>  
                 <li>Creatividad e Innovación</li>
             </ul>
-            <ul>
+            <ul class="general-text">
                 <li>Comunicación Efectiva</li>
                 <li>Pensamiento Analítico</li>
                 <li>Resolución de Problemas</li>
@@ -101,19 +103,21 @@
     </section>
     <section class="content-pjts" id="projects">
         <h2 class="title">PROJECTS</h2>
-        <p>Estos son algunos de los proyectos que he realizado.</p>
-        <ul class="box-flex">
-            <li><a href="#" class="btn">Library</a></li>
-            <li><a href="#" class="btn">Wedding Invitation</a></li>
-            <li><a href="#" class="btn">Basic Calculator</a></li>
-            <li><a href="#" class="btn">Task Manager</a></li>
-            <li><a href="#" class="btn">My Portfolio</a></li>
-        </ul>
+        <p class="general-text">Estos son algunos de los proyectos que he realizado.</p>
+        <div>
+            <a href="#">Library</a>
+            <a href="#">Wedding Invitation</a>
+            <a href="#">Basic Calculator</a>
+            <a href="#">Task Manager</a>
+            <a href="#">My Portfolio</a>
+        </div>
     </section>
     <section class="content-cntct" id="contact">
         <h2 class="title">CONTACT</h2>
-        <p>Si tienes alguna pregunta o deseas ponerte en contacto conmigo, 
-            no dudes en enviarme un mensaje. Estoy disponible para discutir proyectos, 
+        <p class="contact-text">Si tienes alguna pregunta o deseas 
+            ponerte en contacto conmigo, 
+            no dudes en enviarme un mensaje. <br>
+            Estoy disponible para discutir proyectos, 
             oportunidades o cualquier consulta que tengas.</p>
         <div class="icons">
             <a href="https://www.linkedin.com/in/adelina-trejo/">
