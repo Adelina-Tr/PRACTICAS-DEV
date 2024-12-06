@@ -13,16 +13,20 @@
     font-style: normal;
     font-variation-settings:"wdth" 100; 
     font-size: 90%;
+    line-height: 5vh;
 }
 nav ul li{
     font-family: "Saira Stencil One", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 120%;
+    font-size: 20px;
 }
 header{
     display: flex;
     background-color:#EDE8EF;
+}
+nav ul{
+    display: flex;
 }
 nav a{
     text-decoration: none;
@@ -42,12 +46,14 @@ nav ul{
     font-family: "Prompt", sans-serif;
     font-weight: 600;
     font-style: normal;
+    letter-spacing: 2px;
 }
 .heading-name{
     font-size: 250%;
 }
 .heading-role{
     font-size: 220%;
+    line-height: 2vh;
 }
 .title{
     color: #2a8ec7;
@@ -79,6 +85,7 @@ h3{
 }
 #skills ul li{
     text-align: left;
+    line-height: 6vh;
 }
 .contact-text{
     font-family: "Open Sans", serif;
