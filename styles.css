@@ -6,7 +6,6 @@
     box-sizing: border-box;
     text-align: center;  
 }
-  
 .general-text{
     font-family: "Open Sans", serif;
     font-optical-sizing: auto;
@@ -15,27 +14,72 @@
     font-size: 90%;
     line-height: 5vh;
 }
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0px;
+}
+header{
+    display: flex;
+    background-color:#EDE8EF;    
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 15px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+header div{
+    align-self: center;
+}
+header nav{
+    flex-grow: 1;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    align-items: center;
+}
 nav ul li{
     font-family: "Saira Stencil One", sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 20px;
+    margin: 0 4px;
 }
-header{
-    display: flex;
-    background-color:#EDE8EF;
-}
-nav ul{
-    display: flex;
-}
-nav a{
+nav ul li a{
     text-decoration: none;
     color: #2a8ec7;
-}
-nav ul{
-    list-style: none;
     display: flex;
-    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    min-width: 45px;
+    min-height: 45px
+}
+nav img{
+    width: 40px;
+    height: 40px;
+    background-color: #f6fcf1;
+    border-radius: 50%;
+    border-color:#2a8ec7;
+    border-style: solid;
+    padding: 5px;
+    transition: width 0.3s, height 0.3s;
+}
+nav img:hover{
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+}
+section{
+    padding-top: 70px;
+    align-items: center;
 }
 .box-flex{    
     display: flex;
