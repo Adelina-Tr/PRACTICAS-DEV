@@ -20,59 +20,56 @@ body{
     justify-content: center;
     margin: 0px;
 }
-header{
-    display: flex;
-    background-color:#EDE8EF;    
-    justify-content: space-between;
+body header{
+    background: linear-gradient(to right, #EDE8EF, #C3BFD7, #A195BF);
+    display: flex;  
     align-items: center;
+    justify-content: space-between;
     padding: 0px 15px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 100;
+    position: fixed; 
+    z-index: 100;   
+    inset: 0 0 auto 0;    
 }
 header div{
-    align-self: center;
+    display: flex;    
 }
 header nav{
     flex-grow: 1;
 }
 nav ul{
-    display: flex;
     list-style: none;
-    justify-content: flex-end;
-    flex-wrap: wrap;
+    display: flex;
+    justify-content:flex-end;
     align-items: center;
+    flex-wrap: wrap;
 }
 nav ul li{
     font-family: "Saira Stencil One", sans-serif;
-    font-weight: 400;
     font-style: normal;
+    font-weight: 400;
     font-size: 20px;
     margin: 0 4px;
 }
 nav ul li a{
     text-decoration: none;
-    color: #2a8ec7;
     display: flex;
-    align-items: center;
     justify-content: center;
-    white-space: nowrap;
     min-width: 45px;
     min-height: 45px
 }
 nav img{
+    background-color: #f6fcf1;
+    border-color:#C3BFD7;
+    border-style:solid;
+    border-radius: 50%;
+    padding: 5px;
+    align-self: center;
     width: 40px;
     height: 40px;
-    background-color: #f6fcf1;
-    border-radius: 50%;
-    border-color:#2a8ec7;
-    border-style: solid;
-    padding: 5px;
     transition: width 0.3s, height 0.3s;
 }
 nav img:hover{
+    border-color: #705697;
     width: 45px;
     height: 45px;
     cursor: pointer;
@@ -86,7 +83,7 @@ section{
     gap: 50px;
 }
 .heading-me{
-    color:#705697;
+    color:#177ab3;
     font-family: "Prompt", sans-serif;
     font-weight: 600;
     font-style: normal;
