@@ -49,8 +49,7 @@ nav ul li{
     font-family: "Saira Stencil One", sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
-    margin: 0 4px;
+    font-size: 20px;  
 }
 nav ul li a{
     text-decoration: none;
@@ -59,7 +58,7 @@ nav ul li a{
     min-width: 45px;
     min-height: 45px
 }
-nav img{
+.icons{
     background-color: #f6fcf1;
     border-color:#C3BFD7;
     border-style:solid;
@@ -71,8 +70,9 @@ nav img{
     transition: width 0.3s, height 0.3s;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
     background: linear-gradient(to bottom, #d4ffd6, #C3BFD7);
+    margin: 0 4px;
 }
-nav img:hover{
+.icons:hover{
     border-color: #d4ffd6;
     width: 45px;
     height: 45px;
@@ -115,9 +115,8 @@ section{
     justify-content: space-around;
     flex-wrap: wrap;
     padding:20px;
-
 }
-#about-me-box img {
+#about-me-img{
     align-self:center;     
     flex-shrink: 0;
     border-top-left-radius: 35%;
@@ -142,7 +141,7 @@ section{
     gap: 50px;
 }
 .title{
-    color: #2a8ec7;
+    color: rgb(42, 142, 199);
     font-family: "Prompt", sans-serif;
     font-weight: 700;
     font-style: normal;
