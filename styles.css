@@ -98,6 +98,8 @@ section{
     flex-direction: column;
     justify-content: center;
     padding: 30px;
+    background-color: #f6fcf1;background: linear-gradient(to left, #f6fcf1, #d4d1e6, #f6fcf1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 #heading-name{
     font-size: 45px;
@@ -166,12 +168,12 @@ h3{
     font-variation-settings:"wdth" 100; 
     font-size: 80%;
 }
-#soft-skills{
+#soft-skills, #projects, #contact{
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-#skills{
+#skills, #links-projects{
     display: flex;
     justify-content: space-evenly;
 }
@@ -188,5 +190,9 @@ h3{
     font-style: normal;
     font-variation-settings:"wdth" 100; 
     font-size: 80%;
+}
+#icons{
+    display: flex;
+    justify-content: center;
 }
 
