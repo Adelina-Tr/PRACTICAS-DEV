@@ -183,6 +183,11 @@ h3{
     text-align: left;
     line-height: 6vh;
 }
+#links-projects img{
+    width: 300px;
+    border-style: double;
+    border-color: #C3BFD7;
+}
 .contact-text{
     font-family: "Open Sans", serif;
     font-optical-sizing: auto;
