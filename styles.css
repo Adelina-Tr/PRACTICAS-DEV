@@ -20,7 +20,7 @@ body{
     justify-content: center;
     margin: 0px;
 }
-body header{
+header{
     background: linear-gradient(to right, #EDE8EF, #C3BFD7, #A195BF);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     display: flex;  
@@ -30,6 +30,7 @@ body header{
     position: fixed; 
     z-index: 100;   
     inset: 0 0 auto 0;    
+    height: 70px
 }
 header div{
     display: flex;    
@@ -69,41 +70,84 @@ nav img{
     height: 40px;
     transition: width 0.3s, height 0.3s;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    background: linear-gradient(to bottom, #d4ffd6, #C3BFD7);
 }
 nav img:hover{
-    border-color: #705697;
+    border-color: #d4ffd6;
     width: 45px;
     height: 45px;
     cursor: pointer;
 }
 section{
-    padding-top: 70px;
+    padding: 70px 30px;    
+}
+#about-me{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: 1;
+}
+#heading-me{
+    color:#177ab3;
+    font-family: "Prompt", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    text-justify: center;
+    letter-spacing: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+}
+#heading-name{
+    font-size: 45px;
+    margin: 0;
+}
+#heading-role{
+    font-size: 35px;
+    margin: 0;
+}
+#about-me-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding:20px;
+
+}
+#about-me-box img {
+    align-self:center;     
+    flex-shrink: 0;
+    border-top-left-radius: 35%;
+    border-bottom-right-radius: 35%;
+}
+#about-me-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    flex-grow: 1;
+    max-width: 73%;   
+}
+#about-me-text p{
+    text-align: justify;
+}
+#about-me-text div{
+    text-align: justify;
 }
 .box-flex{    
     display: flex;
     gap: 50px;
 }
-.heading-me{
-    color:#177ab3;
-    font-family: "Prompt", sans-serif;
-    font-weight: 600;
-    font-style: normal;
-    letter-spacing: 2px;
-}
-.heading-name{
-    font-size: 250%;
-}
-.heading-role{
-    font-size: 220%;
-    line-height: 2vh;
-}
+
 .title{
     color: #2a8ec7;
     font-family: "Prompt", sans-serif;
     font-weight: 700;
     font-style: normal;
     font-size: 180%;
+    background-color: #f6fcf1;background: linear-gradient(to left, #f6fcf1, #d4d1e6, #f6fcf1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 .subtitle, 
 h3{
