@@ -139,7 +139,6 @@ section{
     display: flex;
     gap: 50px;
 }
-
 .title{
     color: #2a8ec7;
     font-family: "Prompt", sans-serif;
@@ -167,8 +166,17 @@ h3{
     font-variation-settings:"wdth" 100; 
     font-size: 80%;
 }
+#soft-skills{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#skills{
+    display: flex;
+    justify-content: space-evenly;
+}
 #soft-skills ul li::marker {
-    color: #705697;
+    color: #d4d1e6;
 }
 #skills ul li{
     text-align: left;
