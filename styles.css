@@ -136,6 +136,14 @@ section{
 #about-me-text div{
     text-align: justify;
 }
+.icons-box{
+    display: flex;
+    justify-content: center;
+}
+.icons-box a{
+    min-width: 50px;
+    min-height: 50px
+}
 .box-flex{    
     display: flex;
     gap: 50px;
@@ -183,10 +191,33 @@ h3{
     text-align: left;
     line-height: 6vh;
 }
+#links-projects{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap:wrap;
+    align-content: flex-start;
+}
+#links-projects a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 280px;
+    min-height: 180px
+}
 #links-projects img{
-    width: 300px;
+    width: 240px;
+    height:140px;;
     border-style: double;
     border-color: #C3BFD7;
+    margin: 15px;
+    transition: width 0.3s, height 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+#links-projects img:hover{
+    border-color: #d4ffd6;
+    width: 250px;
+    height: 150px;
+    cursor: pointer;
 }
 .contact-text{
     font-family: "Open Sans", serif;
@@ -195,8 +226,5 @@ h3{
     font-variation-settings:"wdth" 100; 
     font-size: 80%;
 }
-#icons{
-    display: flex;
-    justify-content: center;
-}
+
 
