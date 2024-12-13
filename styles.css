@@ -11,8 +11,8 @@
     font-optical-sizing: auto;
     font-style: normal;
     font-variation-settings:"wdth" 100; 
-    font-size: 90%;
-    line-height: 5vh;
+    font-size: 115%;
+    line-height: 6vh;
 }
 body{
     display: flex;
@@ -79,7 +79,7 @@ nav ul li a{
     cursor: pointer;
 }
 section{
-    padding: 70px 30px;    
+    padding: 70px 30px 0px 30px;    
 }
 #about-me{
     display: flex;
@@ -139,6 +139,8 @@ section{
 .icons-box{
     display: flex;
     justify-content: center;
+    margin-top: 25px;
+    gap: 20px;
 }
 .icons-box a{
     min-width: 50px;
@@ -147,7 +149,10 @@ section{
 .box-flex{    
     display: flex;
     gap: 50px;
-}
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 40px;
+}  
 .title{
     color: rgb(42, 142, 199);
     font-family: "Prompt", sans-serif;
@@ -165,16 +170,22 @@ h3{
     font-style: normal;
     font-size: 120%;
 }
-.box{
-    background-color: #EDEDF5;
-}
 .hard-skills-text{
     font-family: "Open Sans", serif;
     font-optical-sizing: auto;
     font-style: normal;
     font-variation-settings:"wdth" 100; 
-    font-size: 80%;
+    font-size: 90%;
 }
+.box{
+    background-color: #EDEDF5;
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    border-radius: 15%;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}  
 #skills{
     display: flex;
     flex-wrap:wrap;
@@ -188,6 +199,7 @@ h3{
 #links-projects{
     display: flex;
     justify-content: space-evenly;
+    margin-top: 30px;
 }
 #soft-skills ul li::marker {
     color: #d4d1e6;
@@ -224,6 +236,9 @@ h3{
     height: 150px;
     cursor: pointer;
 }
+#contact{
+    padding-bottom: 70px;
+}
 @media (max-width: 750px){
     #about-me-box{
         padding:20px 0px;
@@ -241,8 +256,22 @@ h3{
     }
     .general-text{
         text-align: justify;
-        font-size: 130%;
+        font-size: 125%;
         line-height: 5vh;
+    }
+    .hard-skills-text{
+        font-size: 100%;
+    }
+    .icons-box{
+        gap: 50px;
+    }
+    nav ul{
+        justify-content: space-evenly;
+    }
+}
+@media (max-height: 750px){
+    .general-text{
+        line-height: 7vh;
     }
 }
 
